@@ -25,6 +25,7 @@ def index():
     return render_template('index.html')
 
 
+	
 # initialize the list of class labels MobileNet SSD was trained to
 # detect, then generate a set of bounding box colors for each class
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",

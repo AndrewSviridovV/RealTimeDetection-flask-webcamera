@@ -1,9 +1,78 @@
 <html>
   <head>
-    <title>Video Streaming Demonstration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+	<style>
+			body {
+		  padding-bottom: 20px;
+		}
+
+		.navbar {
+		  margin-bottom: 20px;
+		}
+
+	</style>
+	
+    <title>RealTimeDetection-flask-webcamera</title>
   </head>
   <body>
-    <h1>Video Streaming Demonstration</h1>
-    <img src="{{ url_for('video_feed') }}">
+	<!-- navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+		 <a class="navbar-brand " href="#">RealTimeDetection-flask-webcamera</a> 
+		  <ul class="navbar-nav">
+		  <!--  
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			-->
+			<!--
+			 <li class="nav-item dropdown">
+			  <a class=" navbar-brand dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RealTimeDetection-flask-webcamera</a>
+			  <div class="dropdown-menu" aria-labelledby="dropdown09">
+				<a class="dropdown-item" href="#">Home</a>
+				<a class="dropdown-item" href="#">Link</a>
+			  </div>
+			</li>
+			-->
+		  </ul>
+		</div>
+	 </nav>
+    <!-- /navigation -->
+
+    <!-- main area -->
+	<main role="main" class="container">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-md-6 text-center mb-5 mb-md-0">
+						<img src="{{ url_for('video_feed') }}" alt="">
+					</div>
+					<div class="col-md-6 align-self-center text-center text-md-left">
+						<div class="block">
+							<h1 class="font-weight-bold mb-4 font-size-60">Video Streaming Demonstration</h1>
+							<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!</p>
+							<a class="btn btn-dark" href="#" role="button">Выключить</a>
+
+						</div>
+					</div>
+				</div><!-- .row close -->
+			</div><!-- .container close -->
+	</main>	
+	
+
+	<!-- Js -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
   </body>
 </html>
